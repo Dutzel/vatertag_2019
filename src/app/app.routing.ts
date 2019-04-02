@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
-import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
@@ -9,15 +9,17 @@ import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { MapComponent } from './components/map/map.component';
+import { FullScreenMapComponent } from './components/full-screen-map/full-screen-map.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
-    { path: 'map',                component: MapComponent },
-    { path: 'nucleoicons',          component: NucleoiconsComponent },
-    { path: 'examples/landing',     component: LandingComponent },
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent }
+    { path: 'index', component: ComponentsComponent },
+    { path: 'map', component: MapComponent },
+    { path: 'fullscreen', component: FullScreenMapComponent },
+    { path: 'nucleoicons', component: NucleoiconsComponent },
+    { path: 'examples/landing', component: LandingComponent },
+    { path: 'examples/login', component: LoginComponent },
+    { path: 'examples/profile', component: ProfileComponent }
 ];
 
 @NgModule({
