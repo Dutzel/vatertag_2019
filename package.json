@@ -38,6 +38,8 @@
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-nouislider": "1.7.13",
     "nouislider": "9.2.0",
+    "npm": "^6.9.0",
+    "openlayers": "^4.6.5",
     "path": "^0.12.7",
     "popper.js": "1.14.7",
     "rellax": "1.4.0",
