@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import * as ol from 'openlayers';
+
+import {defaults as defaultControls, FullScreen} from 'ol/control.js';
+import Map from 'ol/Map.js';
+import View from 'ol/View.js';
+import TileLayer from 'ol/layer/Tile.js';
+import OSM from 'ol/source/OSM.js';
 
 @Component({
   selector: 'app-map',
@@ -8,24 +13,23 @@ import * as ol from 'openlayers';
 })
 export class MapComponent implements OnInit {
 
-  map: ol.Map;
   constructor() { }
 
   ngOnInit() {
-    const view = new ol.View({
+    const view = new View({
       center: [-9101767, 2822912],
       zoom: 14
     });
 
-    this.map = new ol.Map({
-      controls: ol.control.defaults().extend([
-        new ol.control.FullScreen({
+    const map = new Map({
+      controls: defaultControls().extend([
+        new FullScreen({
           source: 'fullscreen'
         })
       ]),
       layers: [
-        new ol.layer.Tile({
-          source: new ol.source.OSM()
+        new TileLayer({
+          source: new OSM()
         })
       ],
       target: 'map',
