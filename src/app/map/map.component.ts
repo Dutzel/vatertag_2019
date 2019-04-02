@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { defaults as defaultControls, FullScreen } from 'ol/control.js';
 import Map from 'ol/Map.js';
@@ -13,9 +14,17 @@ import OSM from 'ol/source/OSM.js';
 })
 export class MapComponent implements OnInit {
 
-  constructor() { }
+  zoom = 'empty'
+  veloroute = 'empty'
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.forEach((params: Params) => {
+      this.zoom = params['zoomlevel'];
+      this.veloroute = params['veloroute'];
+    });
+
     this.extendView();
 
     const view = new View({
@@ -37,6 +46,7 @@ export class MapComponent implements OnInit {
       target: 'map',
       view: view
     });
+
   }
 
   extendView() {

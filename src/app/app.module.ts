@@ -6,11 +6,13 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
+import { SafePipe } from './iframe-view/safe.pipe';
+import { IframeViewComponent } from './iframe-view/iframe-view.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        MapComponent
+        MapComponent, SafePipe, IframeViewComponent
     ],
     imports: [
         BrowserAnimationsModule,

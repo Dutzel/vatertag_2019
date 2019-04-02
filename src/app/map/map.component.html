@@ -4,7 +4,10 @@
   src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 
 <div id="fullscreen" class="fullscreen">
-  <button class="collapsible">Open Collapsible</button>
+  <button class="collapsible">Open Collapsible,
+    <span ng-if="zoom!=''" class="animate-if">
+        Zoom: {{zoom}}, Veloroute: {{veloroute}}
+    </span> </button>
   <div class="content">
     <p>Lorem ipsum...</p>
     <p>Lorem ipsum...</p>
