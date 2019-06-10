@@ -28,7 +28,7 @@ export class MapComponent implements OnInit {
     this.extendView();
 
     const view = new View({
-      center: [-9101767, 2822912],
+      center: [1114833.19,7084036.38],
       zoom: 14
     });
 

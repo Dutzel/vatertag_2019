@@ -11,8 +11,19 @@
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | WebglDrone</title>
+    <link rel="shortcut icon" href="assets/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="assets/TemplateData/style.css">
+    <script src="assets/TemplateData/UnityProgress.js"></script>
+    <script src="assets/Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "assets/Build/App.json", {onProgress: UnityProgress});
+    </script>
 </head>
 <body class="sidebar-collapse">
+ 
     <app-root></app-root>
 </body>
 </html>
