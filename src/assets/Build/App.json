@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "MapBoxTest",
+"productName": "ArmabelVersusIsabell",
 "productVersion": "0.1",
 "dataUrl": "App.data.unityweb",
 "wasmCodeUrl": "App.wasm.code.unityweb",
@@ -9,8 +9,7 @@
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
 "backgroundColor": "#231F20",
-"cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.1.5f1"
+"unityVersion": "2019.2.11f1"
 }
